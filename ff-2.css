@@ -1,0 +1,207 @@
+body {
+    background-color: #a9a9a9;
+    font-family:"Poppins";
+  }
+  
+  .navbar {
+    background-color: #1b1c1d;
+  }
+  .ff-logo {
+    mix-blend-mode: lighten !important;
+    max-height: 3.2rem;
+  }
+  .main-top-heading {
+    font-family:Roboto;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    height: 30em;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.8);
+   
+  }
+  .card-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #172b4b;
+  }
+
+  .card-body {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .card-heading-text {
+    font-family:Roboto;
+   color:white;
+    margin-top:8em !important;
+    font-weight:600 !important;
+    font-size:1.3em
+  }
+  .card-body-text {
+    font-family:Poppins;
+    color:white;
+    font-weight:100 !important;
+    font-size:0.8em;
+  }
+  .btn {
+    color: #fff;
+    transition: background-color 0.3s !important;
+    font-size:0.8rem;
+  }
+  .btn-outline-danger {
+    font-size: 0.9rem;
+  }
+  .get--diamonds--btn {
+    background-color: #d91c1f !important;
+  }
+  .get--diamonds--btn:hover:hover {
+    background-color: #b10000 !important;
+  }
+  
+  .explore-btn {
+    background-color: #1e385f !important;
+  }
+  .explore-btn::after {
+    content: "\2192";
+    padding-left: 0.5em;
+  }
+  .explore-btn:hover {
+    background-color: #172b4b !important;
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px); 
+    }
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0) translateY(20px);
+    }
+    100% {
+      transform: translateX(-66px) translateY(20px); 
+    }
+  }
+  
+  @keyframes adjustLogoUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .animated-text {
+    position: relative;
+    animation: slideInFromLeft 1s ease-out forwards,
+               moveDown 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s forwards,
+               moveLeft 0.6s cubic-bezier(0.68, -0.55, 0.265, 2) 1.50s forwards;
+    color: #FF5733;
+    font-size:1em;
+    overflow:hidden;
+  }
+  
+  .ff-logo {
+    animation: adjustLogoUp 0.5s ease-out 1.58s forwards; 
+  }
+  .footer {
+    background: linear-gradient(to right, #1b1c1d ,  #333333);
+    background: linear-gradient(to left ,  #1b1c1d ,  #333333);
+
+  }
+  .social-icons a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size:1.3rem;
+  }
+  
+  .social-icons a:hover {
+    background-color: black;
+    transition: 0.5s;
+  }
+  
+  .social-icons a i:hover {
+    background-color: black;
+    color: #b10000;
+    transition: 0.5s;
+  }
+  .footer-links:hover{
+    text-decoration:none;
+    color: #b10000 !important;
+    transition: 0.5s;
+  }
+  .designer {
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .vertical-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto; 
+    height: 100%; 
+    opacity:0.8;
+    filter: sepia(1) saturate(10) hue-rotate(-50deg);
+    transition: filter 0.3s ease;
+  }
+  .vertical-image:hover {
+    opacity:1;
+    cursor:pointer;
+  
+  }
+  
+  .left-vertical-image {
+    left:0;
+  }
+  
+  .right-vertical-image {
+    right: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .box {
+      width: calc(50% - 20px);
+    }
+    .left-vertical-image {
+      display:none;
+    }
+    .right-vertical-image {
+      display:none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-md-4 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col-md-4 {
+      max-width: calc((100% - 40px) / 3);
+    }
+  }
